@@ -1,0 +1,4 @@
+# Set AutoAccept on marketingcalendar@horizonag.com shared mailbox
+Set-Mailbox marketingcalendar@horizonag.com -Type Room
+Set-CalendarProcessing marketingcalendar@horizonag.com -AutomateProcessing AutoAccept -AllowConflicts:$true
+Set-Mailbox marketingcalendar@horizonag.com -Type Sharedv

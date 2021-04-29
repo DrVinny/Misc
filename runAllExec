@@ -1,0 +1,7 @@
+powershell
+run every executable in a folder
+
+
+Get-ChildItem -Filter *.exe | ForEach {
+    &$_.Fullname /s
+}
